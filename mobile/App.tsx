@@ -8,8 +8,9 @@ import {
 
 import { AuthContextProvider } from "./src/contexts/AuthContext";
 
-import { Find } from "./src/screens/Find";
 import { Loading } from "./src/components/Loading";
+
+import { Routes } from "./src/routes";
 
 import { THEME } from "./src/styles/theme";
 
@@ -29,7 +30,7 @@ export default function App() {
           translucent
         />
 
-        {fontsLoader ? <Find /> : <Loading />}
+        {fontsLoader ? <Routes /> : <Loading />}
       </AuthContextProvider>
     </NativeBaseProvider>
   );
